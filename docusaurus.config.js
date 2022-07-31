@@ -33,6 +33,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -58,10 +59,10 @@ const config = {
     ({
       navbar: {
         title: "DASA Docs",
-        logo: {
-          alt: "My Site Logo",
-          src: "img/website_logo.png",
-        },
+        // logo: {
+        //   alt: "My Site Logo",
+        //   src: "img/website_logo.png",
+        // },
         items: [
           {
             type: "doc",
