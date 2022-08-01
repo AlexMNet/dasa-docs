@@ -1,6 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+require("dotenv").config();
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -8,15 +8,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "DASA Docs",
   tagline: "Data Structures and Algorithms",
-  url: "https://github.com",
-  baseUrl: "/dasa-docs/",
+  url: process.env.SITE_URL,
+  baseUrl: process.env.BASE_URL,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "AlexMNet", // Usually your GitHub org/user name.
+  organizationName: process.env.ORG_NAME, // Usually your GitHub org/user name.
   projectName: "dasa-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: true,
@@ -37,18 +37,8 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
+
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -61,10 +51,6 @@ const config = {
     ({
       navbar: {
         title: "DASA Docs",
-        // logo: {
-        //   alt: "My Site Logo",
-        //   src: "img/website_logo.png",
-        // },
         items: [
           {
             type: "doc",
@@ -72,7 +58,6 @@ const config = {
             position: "left",
             label: "Documentation",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/AlexMNet/dasa-docs",
             label: "GitHub",
@@ -109,19 +94,6 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: "More",
-          //   items: [
-          //     {
-          //       label: "Blog",
-          //       to: "/blog",
-          //     },
-          //     {
-          //       label: "GitHub",
-          //       href: "https://github.com/facebook/docusaurus",
-          //     },
-          //   ],
-          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} DASA Docs.`,
       },
