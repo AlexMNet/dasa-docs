@@ -127,7 +127,11 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      liveCodeBlock: {
+        playgroundPosition: "bottom",
+      },
     }),
+  plugins: ["@docusaurus/theme-live-codeblock"],
 };
 
 module.exports = config;
