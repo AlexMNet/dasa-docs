@@ -8,16 +8,18 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "DASA Docs",
   tagline: "Data Structures and Algorithms",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://github.com",
+  baseUrl: "/dasa-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "AlexMNet", // Usually your GitHub org/user name.
+  projectName: "dasa-docs", // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  trailingSlash: true,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -37,8 +39,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         // blog: {
         //   showReadingTime: true,
@@ -72,7 +74,7 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/AlexMNet/dasa-docs",
             label: "GitHub",
             position: "right",
           },
@@ -86,7 +88,7 @@ const config = {
             items: [
               {
                 label: "About",
-                to: "/docs/intro",
+                to: "/",
               },
             ],
           },
