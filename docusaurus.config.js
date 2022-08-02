@@ -12,7 +12,7 @@ const config = {
   baseUrl: process.env.BASE_URL,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/dasa-docs-favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -51,13 +51,12 @@ const config = {
     ({
       navbar: {
         title: "DASA Docs",
+        logo: {
+          alt: "Dasa Docs Logo",
+          src: "img/dasa-docs-favicon.ico",
+          srcDark: "img/dasa-docs-favicon.ico",
+        },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Documentation",
-          },
           {
             href: "https://github.com/AlexMNet/dasa-docs",
             label: "GitHub",
