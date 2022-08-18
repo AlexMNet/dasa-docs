@@ -9,7 +9,7 @@ const config = {
   title: 'DASA Docs',
   tagline: 'Data Structures and Algorithms',
   url: 'https://alexmnet.github.io',
-  baseUrl: '/dasa-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/dasa-docs-favicon.ico',
