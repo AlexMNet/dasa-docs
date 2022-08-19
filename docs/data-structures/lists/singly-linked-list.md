@@ -36,6 +36,7 @@ class LinkedList {
   //Add node to end of list
   push(value) {
     const newNode = new Node(value);
+
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -43,6 +44,7 @@ class LinkedList {
       this.tail.next = newNode;
       this.tail = newNode;
     }
+
     this.length++;
     return this;
   }
@@ -50,25 +52,31 @@ class LinkedList {
   //Remove node from end of list
   pop() {
     if (!this.head) return undefined;
-    let newTail = this.head;
-    let oldTail = this.head;
+
+    const newTail = this.head;
+    const oldTail = this.head;
+
     while (oldTail.next) {
       newTail = oldTail;
       oldTail = oldTail.next;
     }
+
     this.tail = newTail;
     this.tail.next = null;
     this.length--;
+
     if (this.length === 0) {
       this.head = null;
       this.tail = null;
     }
+
     return oldTail;
   }
 
   //Add node to beginning of list
   unshift(value) {
     const newNode = new Node(value);
+
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -76,6 +84,7 @@ class LinkedList {
       newNode.next = this.head;
       this.head = newNode;
     }
+
     this.length++;
     return this;
   }
@@ -83,33 +92,41 @@ class LinkedList {
   //Remove node from the beginning of the list
   shift() {
     if (!this.head) return undefined;
-    let oldHead = this.head;
+
+    const oldHead = this.head;
     this.head = this.head.next;
     oldHead.next = null;
     this.length--;
+
     if (this.length === 0) {
       this.tail = null;
     }
+
     return oldHead;
   }
 
   //Get a node at a specific index
   get(index) {
     if (index < 0 || index >= this.length) return undefined;
-    let temp = this.head;
+
+    const temp = this.head;
+
     for (let i = 0; i < this.length; i++) {
       temp = temp.next;
     }
+
     return temp;
   }
 
   //Set (change) value of node at specific index
   set(index, value) {
     const node = this.get(index);
+
     if (node) {
       node.value = value;
       return true;
     }
+
     return false;
   }
 
@@ -123,6 +140,7 @@ class LinkedList {
     const temp = this.get(index - 1);
     newNode.next = temp.next;
     temp.next = newNode;
+
     this.length++;
     return true;
   }
@@ -137,6 +155,7 @@ class LinkedList {
     let deletedNode = prevNode.next;
     prevNode.next = deletedNode.next;
     deletedNode.next = null;
+
     this.length--;
     return deletedNode;
   }
@@ -156,9 +175,8 @@ class LinkedList {
       prev = temp;
       temp = next;
     }
+
     return this;
   }
 }
-
-const list = new LinkedList(1);
 ```
