@@ -1,10 +1,6 @@
-export const U = ({ children, color }) => {
-  return <span style={{ fontWeight: 'bold', color: color }}>{children}</span>;
-};
-
 # DASA Docs
 
-DASA standing for <U color="#00bcd4">DA</U>ta <U color="#00bcd4">S</U>tructures & <U color="#00bcd4">A</U>lgorithms is a documenation website created using docusaurus.
+DASA standing for DAta Structures & Algorithms is a documenation website created using docusaurus.
 
 The best way for me to learn has always involved teaching. I hope that this will be a great resource for anyone looking to learn not only how to build out Data Structures from scratch (using JavaScript) but also how to use these fascinating strucures to solve common leetcode questions.
 
@@ -26,4 +22,4 @@ Great for studying while traveling!
 ### Downlaod to computer desktop
 
 - Visit the website [DASA Docs](https://www.dasadocs.com) in chrome
-- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in safari and then click on "Add to Home Screen" and thats it!
+- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in the url window.
