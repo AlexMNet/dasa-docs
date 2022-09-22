@@ -119,7 +119,7 @@ const config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/dasa-docs.png',
+            href: '/img/dasa-docs-icon.png',
           },
           {
             tagName: 'link',
@@ -144,18 +144,18 @@ const config = {
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: '/img/dasa-docs.png',
+            href: '/img/dasa-docs-icon.png',
           },
           {
             tagName: 'link',
             rel: 'mask-icon',
-            href: '/img/dasa-docs.png',
+            href: '/img/dasa-docs-icon.png',
             color: '#00bcd4',
           },
           {
             tagName: 'meta',
             name: 'msapplication-TileImage',
-            content: '/img/dasa-docs.png',
+            content: '/img/dasa-docs-icon.png',
           },
           {
             tagName: 'meta',
