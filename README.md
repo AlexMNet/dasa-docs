@@ -10,9 +10,9 @@ Thank you!
 
 ## PWA
 
-This website is a progressive web application [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) meaning you can easily download the app to your phone or computer desktop and use it without having to be connected to the internet!
+This website is a progressive web application [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) meaning you can easily download the app to your phone or computer desktop and use offline!
 
-Great for studying while traveling!
+Great for studying while traveling! 🛫 🛩
 
 ### Download to iPhone
 
@@ -22,4 +22,4 @@ Great for studying while traveling!
 ### Downlaod to computer desktop
 
 - Visit the website [DASA Docs](https://www.dasadocs.com) in chrome
-- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in the url window
+- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in the url window and then click install!
