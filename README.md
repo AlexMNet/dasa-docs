@@ -22,4 +22,4 @@ Great for studying while traveling!
 ### Downlaod to computer desktop
 
 - Visit the website [DASA Docs](https://www.dasadocs.com) in chrome
-- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in the url window.
+- Click on the <img src='/static/img/chrome-box-arrow.png' width='30' /> icon in the url window
